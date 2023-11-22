@@ -3,6 +3,7 @@
 #include <iostream>
 #include <algorithm>
 using namespace std;
+// sort 정렬 함수 공부
 bool compare(const pair<int,int> a, const pair<int,int> b){
     if(a.second == b.second) {
         return a.first <b.first;
@@ -11,6 +12,7 @@ bool compare(const pair<int,int> a, const pair<int,int> b){
 }
 vector<int> solution(vector<int> sequence, int k) {
     vector<int> answer;
+    // 저장하는 배열을 굳이 안구현해도 되더라
     vector<pair<int,int>> temp; int idx;
     vector<pair<int,int>> cal;
     int begin =0; int end =0; int sum =sequence[0];
